@@ -1,5 +1,8 @@
-#include "header.hpp" // Contains All Headers
-#include "nmapper.hpp" // Contains all functions
+#include "header/header.hpp"  // Contains All Headers
+#include "header/nmapper.hpp" // Contains all functions
+
+#include "class/nmap.hpp"
+#include "class/nmap.cpp"
 
 int main(int argv, char *argc[])
 {
@@ -15,6 +18,8 @@ int main(int argv, char *argc[])
     // Default Scan With Nmap
     nmapdefaultscan(IP);
 
-    return 0;
+    // Nmap Open Port Scan
+    nmapopenportscan(IP);
 
+    return 0;
 }
