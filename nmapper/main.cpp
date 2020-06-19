@@ -13,13 +13,13 @@ int main(int argv, char *argc[])
         return -1;
     }
 
-    string IP(argc[1]);
+    prtpalvij::nmap scanner(argc[1]);
 
     // Default Scan With Nmap
-    nmapdefaultscan(IP);
+    scanner.defaultscan();
 
     // Nmap Open Port Scan
-    nmapopenportscan(IP);
+    scanner.portscan();
 
     return 0;
 }
