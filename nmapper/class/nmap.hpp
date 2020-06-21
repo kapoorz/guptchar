@@ -18,5 +18,6 @@ namespace prtpalvij
         void defaultscan();
         void portscan();
         void completescan();
+
     };
 }; // namespace prtpalvij

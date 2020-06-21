@@ -1,9 +1,11 @@
 // open ports as comma seperated
 string opcom(string IP)
 {
-    system(("cat nmapper" + IP + "@port.temp.scan | grep Discovered | cut -d \" \" -f 4 | sed 's/\\/tcp//' > openports.txt").c_str());
+    string filename = "";
+    filename = "openports" + IP + ".txt";
+    system(("cat nmapper" + IP + "@port.temp.scan | grep \"Discovered open port\"| cut -d \" \" -f 4 | sed 's/\\/tcp//' > " + filename).c_str());
     fstream fin;
-    fin.open("openports.txt", ios::in);
+    fin.open(filename, ios::in);
     if (fin.fail())
     {
         cerr << "[-] Error : Cannot Open the file ;\n";
@@ -21,6 +23,7 @@ string opcom(string IP)
         ans.push_back(x);
     }
     fin.close();
+    remove(filename.c_str());
     ans.erase(ans.end() - 2, ans.end());
     return ans;
 }
