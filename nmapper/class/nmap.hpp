@@ -11,8 +11,12 @@ namespace prtpalvij
         nmap(string); // Takes String As IP address
         nmap(char *); // Takes Character Array As IP address
 
-            // methods
-            void defaultscan();
-            void portscan();
+        // methods
+        string getip();
+
+        //Scans
+        void defaultscan();
+        void portscan();
+        void completescan();
     };
 }; // namespace prtpalvij

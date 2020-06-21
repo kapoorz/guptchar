@@ -14,12 +14,15 @@ int main(int argv, char *argc[])
     }
 
     prtpalvij::nmap scanner(argc[1]);
-
+   
     // Default Scan With Nmap
     scanner.defaultscan();
 
     // Nmap Open Port Scan
     scanner.portscan();
+
+    // Nmap Complete Scanning
+    scanner.completescan();
 
     return 0;
 }
