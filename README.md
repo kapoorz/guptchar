@@ -6,6 +6,7 @@ It Only Works For Debian Based Systems
 1. Download Script On Your PC and Go to the directory
 
 #USE:
+
 git clone https://github.com/achallion/nmapper.git && cd nmapper
 
 
@@ -16,21 +17,25 @@ git clone https://github.com/achallion/nmapper.git && cd nmapper
    (iv)  g++
 
 #USE:
+
 apt-get install nmap sed grep g++
 
 3. After g++ is installed , Lets Compile the script
 
 #USE:
+
 g++ main.cpp -o nmapper
 
 4. Move nmapper to /opt/
 
 #USE:
+
 mv nmapper /opt/
 
 5. Set opt to system path 
       
 #USE:
+
 echo "export PATH=/opt:\$PATH" >> ~/.bashrc
 
 6. Close the terminal and again open
@@ -39,6 +44,7 @@ echo "export PATH=/opt:\$PATH" >> ~/.bashrc
 Just know your ip address
 
 #USE:
+
 nmapper <ip address>
 
 
