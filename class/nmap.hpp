@@ -1,6 +1,6 @@
 
 
-namespace prtpalvij
+namespace simhah
 {
     class nmap
     {
@@ -12,12 +12,14 @@ namespace prtpalvij
         nmap(char *); // Takes Character Array As IP address
 
         // methods
+
         string getip();
 
-        //Scans
+        // scans
         void defaultscan();
         void portscan();
         void completescan();
-
+        void removedefaultscan();
+        void removeportscan();
     };
-}; // namespace prtpalvij
+}; // namespace simhah

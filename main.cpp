@@ -13,8 +13,8 @@ int main(int argv, char *argc[])
         return -1;
     }
 
-    prtpalvij::nmap scanner(argc[1]);
-   
+    simhah::nmap scanner(argc[1]);
+
     // Default Scan With Nmap
     scanner.defaultscan();
 
@@ -23,6 +23,13 @@ int main(int argv, char *argc[])
 
     // Nmap Complete Scanning
     scanner.completescan();
+
+    // Remove Default Nmap Scan as Complete Scan is Done
+    scanner.removedefaultscan();
+
+    // Remove Nmap Port Scan as Complete Scan is Done
+    scanner.removeportscan();
+    
 
     return 0;
 }

@@ -1,5 +1,5 @@
 
-namespace prtpalvij
+namespace simhah
 {
      // Constructor
 
@@ -15,8 +15,6 @@ namespace prtpalvij
 
      // methods
 
-     // Get
-
      string nmap::getip()
      {
           return IP;
@@ -28,7 +26,7 @@ namespace prtpalvij
           // Default scan which is temporary until the script executes
           cout << "\n\n\n\n[*] Starting Default Nmap Scan \n"
                << flush;
-          system(("nmap -vvv " + IP + " > nmapper" + IP + "@def.temp.scan").c_str());
+          system(("nmap -vvv -sV " + IP + " > nmapper" + IP + "@def.temp.scan").c_str());
           cout << "[+] Default Scan Completed \n[F] Sending Results to => nmapper" + IP + "@def.temp.scan \n[D] Done\n"
                << flush;
      }
@@ -54,4 +52,26 @@ namespace prtpalvij
                << flush;
      }
 
-}; // namespace prtpalvij
+     void nmap::removedefaultscan()
+     {
+          // After Complete Scan , It should remove default scan results
+          cout << "\n\n\n\n[*] Removing Nmap Default Scan Results \n";
+          string filename = "nmapper" + IP + "@def.temp.scan";
+          remove(filename.c_str());
+          cout << "[+] Removed " + filename;
+          cout << "\n[F] Please Refer To Complete Scan Now";
+          cout << "\n[D] Done\n" << flush;
+     }
+
+     void nmap::removeportscan()
+     {
+          // After We have Done With our Program , We remove Port Scan as Well
+          cout << "\n\n\n\n[*] Removing Nmap Port Scan Results \n";
+          string filename = "nmapper" + IP + "@port.temp.scan";
+          remove(filename.c_str());
+          cout << "[+] Removed " + filename;
+          cout << "\n[F] Please Refer To Complete Scan Now";
+          cout << "\n[D] Done\n" << flush;
+     }
+
+}; // namespace simhah
