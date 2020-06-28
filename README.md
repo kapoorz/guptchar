@@ -1,3 +1,7 @@
+nmapper V2.3
+
+Created By : Bhavya Kapoor and my Gurus
+
 It Only Works For Debian Based Systems
 
 
@@ -59,20 +63,24 @@ nmapper <ip address>
 
 
 
-          !!! Hope You would now be able to use the script in any folder !!!
+Thank You
+
+
+
+'               !!! Hope You would now be able to use the script in any folder !!!
    
 
 
 
-                                {[ HAVE FUN GUYS]}
+'                              {[ HAVE FUN GUYS]}
 
 
 
-                           //     Open To any suggestion       \\
-                           \\ Open Issue if any Conflict comes //
+'                           //     Open To any suggestion       \\
+'                           \\ Open Issue if any Conflict comes //
             
 
 
 
 
-               |-| First Read the Readme carefully before opening an issue |-|
+'               |-| First Read the Readme carefully before opening an issue |-|
