@@ -76,11 +76,12 @@ Thank You
 
 
 
-'                           //     Open To any suggestion       \\
-'                           \\ Open Issue if any Conflict comes //
+'                           //     Open To any suggestion       \\\\
+
+'                           \\\\ Open Issue if any Conflict comes //
             
 
 
 
 
-'               |-| First Read the Readme carefully before opening an issue |-|
+'               |-|   First Read the Readme carefully before opening an issue    |-|
