@@ -1,6 +1,6 @@
-nmapper V2.3
+GUPTCHAR V3.0
 
-Created By : Bhavya Kapoor and my Gurus
+Created By : Bhavya Kapoor and helped by my Gurus
 
 It Only Works For Debian Based Systems
 
@@ -66,22 +66,21 @@ nmapper <ip address>
 Thank You
 
 
-
-'               !!! Hope You would now be able to use the script in any folder !!!
+!!! Hope You would now be able to use the script in any folder !!!
    
 
 
 
-'                              {[ HAVE FUN GUYS]}
+                            {[  HAVE FUN GUYS  ]}
 
 
 
-'                           //     Open To any suggestion       \\\\
+*     Open To any suggestion
 
-'                           \\\\ Open Issue if any Conflict comes //
+*     Open Issue if any Conflict comes 
             
 
 
 
 
-'               |-|   First Read the Readme carefully before opening an issue    |-|
+             |-|   First Read the Readme carefully before opening an issue    |-|
