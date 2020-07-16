@@ -1,4 +1,4 @@
-GUPTCHAR V3.0
+GUPTCHAR v3.1
 
 Created By : Bhavya Kapoor and helped by my Gurus
 
@@ -9,7 +9,7 @@ It Only Works For Debian Based Systems
 
 #### USE:
 ```
-git clone https://github.com/achallion/nmapper.git && cd nmapper
+git clone https://github.com/achallion/guptchar.git && cd guptchar
 ```
 
 
@@ -30,15 +30,15 @@ apt-get install nmap sed grep g++
 
 #### USE:
 ```
-g++ main.cpp -o nmapper
+g++ main.cpp -o guptchar
 ```
 
 
-### 4. Move nmapper to /opt/
+### 4. Move guptchar to /opt/
 
 #### USE:
 ```
-mv nmapper /opt/
+mv guptchar /opt/
 ```
 
 
@@ -58,7 +58,7 @@ Just know your ip address
 
 #### USE:
 ```
-nmapper <ip address>
+guptchar <ip address>
 ```
 
 
