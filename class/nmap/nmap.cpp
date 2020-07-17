@@ -1,51 +1,57 @@
 namespace kanha
 {
-     namespace scanner
+     namespace local
      {
-          namespace nmap
+          namespace scanner
           {
-               void gdefault(string ip)
+               namespace nmap
                {
-                    cout << "\n\n\n\n";
-                    cout << "[*] Starting Default Nmap Scan \n";
-                    cout << flush;
-                    system(("nmap -vvv -sV " + ip + " > guptchar" + ip + "@def.nmap").c_str());
-                    cout << "[+] Default Scan Completed \n";
-                    cout << "[F] Sending Results to => guptchar" + ip + "@def.nmap \n";
-                    cout << "[D] Done\n";
-                    cout << flush;
-               }
+                    void gdefault(string ip)
+                    {
+                         cout << "\n\n\n\n";
+                         cout << "[*] Starting Default Nmap Scan \n";
+                         cout << flush;
+                         system(("nmap -vvv -sV " + ip + " > guptchar" + ip + "@def.nmap").c_str());
+                         cout << "[+] Default Scan Completed \n";
+                         cout << "[F] Sending Results to => guptchar" + ip + "@def.nmap \n";
+                         cout << "[D] Done\n";
+                         cout << flush;
+                    }
 
-               void gport(string ip)
-               {
-                    cout << "\n\n\n\n";
-                    cout << "[*] Starting Nmap Port Scan \n";
-                    cout << flush;
-                    system(("nmap -vvv -T5 -p- " + ip + " > guptchar" + ip + "@port.nmap").c_str());
-                    cout << "[+] Nmap Port Scan Completed \n";
-                    cout << "[F] Sending Results to => guptchar" + ip + "@port.nmap \n";
-                    cout << "[D] Done\n";
-                    cout << flush;
-               }
+                    void gport(string ip)
+                    {
+                         cout << "\n\n\n\n";
+                         cout << "[*] Starting Nmap Port Scan \n";
+                         cout << flush;
+                         system(("nmap -vvv -T5 -p- " + ip + " > guptchar" + ip + "@port.nmap").c_str());
+                         cout << "[+] Nmap Port Scan Completed \n";
+                         cout << "[F] Sending Results to => guptchar" + ip + "@port.nmap \n";
+                         cout << "[D] Done\n";
+                         cout << flush;
+                    }
 
-          } // namespace nmap
+                    void gcomplete(string ip, string opcom)
+                    {
+                         cout << "\n\n\n\n";
+                         cout << "[*] Starting Nmap Complete Scan \n";
+                         cout << flush;
+                         system(("nmap -vvv -A -sV -O " + ip + " > guptchar" + ip + "@comp.nmap").c_str());
+                         cout << "[+] Complete Scan Completed \n";
+                         cout << "[F] Sending Results to => guptchar" + ip + "@comp.nmap \n";
+                         cout << "[D] Done \n";
+                         cout << flush;
+                    }
 
-     } // namespace scanner
-/*
+               } // namespace nmap
+
+          } // namespace scanner
+
+     } // namespace local
+     /*
     
     
    
 
-     void nmap::completescan()
-     {
-          // Complete Scan for An IP
-          cout << "\n\n\n\n[*] Starting Nmap Complete Scan \n"
-               << flush;
-          string openport = opcom(IP);
-          system(("nmap -vvv -A -sV -O " + IP + " > nmapper" + IP + "@complete.scan").c_str());
-          cout << "[+] Complete Scan Completed \n[F] Sending Results to => nmapper" + IP + "@complete.scan \n[D] Done \n"
-               << flush;
-     }
 
      void nmap::removedefaultscan()
      {

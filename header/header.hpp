@@ -4,3 +4,6 @@
 #include <fstream>
 
 using namespace std;
+
+#include "helperfunctions.hpp"
+#include "helperfunctions.cpp"

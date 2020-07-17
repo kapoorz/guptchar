@@ -11,8 +11,9 @@ namespace kanha
             namespace nmap
             {
 
-                void (*gdefault)(string);
-                void (*gport)(string);
+                void (*gdefault)(string);          // Nmap Default Scan
+                void (*gport)(string);             // Nmap All Port Scan
+                void (*gcomplete)(string, string); // Nmap Complete Scan
 
             } // namespace nmap
 

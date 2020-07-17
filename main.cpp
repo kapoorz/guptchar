@@ -15,9 +15,11 @@ int main(int argv, char *argc[])
     string ip = argc[1];
     string openports;
 
-    kanha::guptchar::init();
-    kanha::guptchar::scanner::nmap::gdefault(ip);
-    kanha::guptchar::scanner::nmap::gport(ip);
+    kanha::guptchar::init();                                  // Initializes Everything
+    kanha::guptchar::scanner::nmap::gdefault(ip);             // Does Nmap Default Scan
+    kanha::guptchar::scanner::nmap::gport(ip);                // Does Nmap Full TCP Portscan
+    openports = kanha::help::opcs(ip);                        // Stores open port Numbers As Comma Seperated
+    kanha::guptchar::scanner::nmap::gcomplete(ip, openports); // Does Nmap Full Scan
 
     return 0;
 }
