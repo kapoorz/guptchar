@@ -20,6 +20,8 @@ int main(int argv, char *argc[])
     kanha::guptchar::scanner::nmap::gport(ip);                // Does Nmap Full TCP Portscan
     openports = kanha::help::opcs(ip);                        // Stores open port Numbers As Comma Seperated
     kanha::guptchar::scanner::nmap::gcomplete(ip, openports); // Does Nmap Full Scan
+    kanha::guptchar::scanner::nmap::gremovedef(ip);           // Remove Nmap Default Scan
+    kanha::guptchar::scanner::nmap::gremoveport(ip);          //Remove Nmap Port Scan
 
     return 0;
 }
